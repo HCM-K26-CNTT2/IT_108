@@ -1,0 +1,28 @@
+﻿Bài 2 : Phân tích và xử lý lỗi thực thi trong Terminal 
+Phần 1: Phân tích
+Windows PowerShell
+* Đầu tiên phải tim xem đang đứng ở thư mục nào bằng cách gõ pwd hoặc Get-Location.
+
+
+* Nếu không dùng pwd hoặc Get-Location ta có thể gõ ls hoặc dir để xem tất cả file trong trong folder sau đó kiếm xem có file mình đang cần không
+
+
+* Qua hai bước trên ta có thể biết được file đó nằm trong folder nào.
+
+
+* .\ là khẳng định rằng muốn chạy file ngay tại đây 
+
+
+* Khi đứng sai thư mục thì không chạy được vì: dấu. cho biết thư mục hiện tại, chỉ cần gõ .\deploy.ps1 thì nó sẽ tìm file deploy.ps1 ngay ở thư mục hiện tại.Nếu file ở chỗ khác, hệ thống không thấy sẽ báo lỗi.
+
+
+Phần 2: Sửa lỗi 
+
+
+* cd ../Download/Projects
+
+
+* Nếu True thì file tồn tại, False thì không tìm thấy: Test-Path .\deploy.ps1 
+
+
+* .\deploy.ps1
